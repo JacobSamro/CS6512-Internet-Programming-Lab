@@ -28,7 +28,6 @@ DataInputStream reader = new DataInputStream(System.in);
         DatagramPacket receivingPacket = new DatagramPacket(receivingData, receivingData.length);
 
         s.receive(receivingPacket);
-        System.out.println("Server Data Length: " + data.length);
         System.out.println("Server : " + new String(receivingPacket.getData()));
 
     

@@ -17,8 +17,7 @@ public class Server {
                 byte[] receivingData = new byte[1024];
                 DatagramPacket receivingPacket = new DatagramPacket(receivingData,receivingData.length);
                 s.receive(receivingPacket);
-                System.out.println("Client :" + new String(receivingPacket.getData()));
-                System.out.println("Length : " + receivingPacket.getData().length);
+                System.out.println("Client :" + new String(receivingPacket.getData()));                
                
                 InetAddress host = receivingPacket.getAddress();
                 int port = receivingPacket.getPort();
